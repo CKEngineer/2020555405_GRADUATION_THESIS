@@ -69,13 +69,13 @@ def xyxy_to_tlwh(bbox_xyxy):
 
 """Simple function that adds fixed color depending on the class"""
 def compute_color_for_labels(label):
-    if label == 2:#Car
-        color = (0,0,255)
-    elif label == 3:#Motorcylce
-        color = (0,255,0)
-    elif label == 5:#Bus
+    if label == 0:#Bus
         color = (255,0,0)
-    elif label == 7:#Truck
+    elif label == 1:#Car
+        color = (0,0,255)
+    elif label == 2:#Motorcycle
+        color = (0,255,0)
+    elif label == 3:#Truck
         color = (0,255,255)
     else:
         color = [int((p * (label ** 2 - label + 1)) % 255) for p in palette]
