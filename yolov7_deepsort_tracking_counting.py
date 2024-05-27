@@ -29,7 +29,9 @@ object_counter = {}
 
 object_counter1 = {}
 
-line = [(100, 500), (1050, 500)]
+
+#Assuming that video sizes are 1920x1080
+line = [(100, 720), (1720, 720)]
 
 speed_line_queue = {}
 
